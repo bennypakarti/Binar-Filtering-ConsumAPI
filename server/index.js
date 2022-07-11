@@ -7,17 +7,17 @@ app.use(express.static('public'));
 
 app.get('/', async(request, response) => {
 
-    response.send(await readFile('./public/index.html', 'utf8'));
+    response.send(await readFile('./public/index.ejs', 'utf8'));
 
 });
 app.get('/home', async(request, response) => {
 
-    response.send(await readFile('./public/index.html', 'utf8'));
+    response.send(await readFile('./public/index.ejs', 'utf8'));
 
 });
 app.get('/cars', async(request, response) => {
 
-    response.send(await readFile('./public/carimobil.html', 'utf8'));
+    response.send(await readFile('./public/carimobil.ejs', 'utf8'));
 
 });
 

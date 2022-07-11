@@ -38,26 +38,94 @@
                             <a class="nav-link" href="#faq">FAQ</a>
                         </li>
                         <li class="nav-item px-1">
-                            <a type="button" class="btn btn-sm btn-success nav-link text-light" data-bs-toggle="modal" data-bs-target="#myModal">Register</a>
+                            <a type="button" class="btn btn-sm btn-primary nav-link text-light" data-bs-toggle="modal" data-bs-target="#modalSign">Sign In</a>
                             <!-- <button type="button" class="btn btn-success">Mulai Sewa Mobil</button> -->
                             <!-- The Modal -->
-                            <div class="modal" id="myModal">
+                            <div class="modal" id="modalSign">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
 
                                         <!-- Modal Header -->
                                         <div class="modal-header">
-                                            <h4 class="modal-title">Modal Heading</h4>
+                                            <h4 class="modal-title">Sign In</h4>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                         </div>
 
                                         <!-- Modal body -->
                                         <div class="modal-body">
-                                            Modal body..
+                                            <form action="">
+                                                <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="disabledSelect" class="form-label">Masuk Sebagai</label>
+                                                <select id="disabledSelect" class="form-select">
+                                                  <option>Admin</option>
+                                                  <option>User</option>
+                                                </select>
+                                              </div>
+                                              <div class="mb-3 text-center">
+                                                <small class="">Belum punya akun ? <a href="">Register</a></small>
+                                                </select>
+                                              </div>
+                                            </form>
                                         </div>
 
                                         <!-- Modal footer -->
-                                        <div class="modal-footer">
+                                        <div class="modal-footer d-flex justify-content-center">
+                                            <button type="submit" class="btn btn-primary" data-bs-dismiss="">Sign In</button>
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a type="button" class="btn btn-sm btn-success nav-link text-light" data-bs-toggle="modal" data-bs-target="#modalRegister">Register</a>
+                            <!-- <button type="button" class="btn btn-success">Mulai Sewa Mobil</button> -->
+                            <!-- The Modal -->
+                            <div class="modal" id="modalRegister">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Register</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Username</label>
+                                                    <input type="text" class="form-control" id="" aria-describedby="emailHelp">
+                                                  </div>
+                                                <div class="mb-3">
+                                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="mb-3">
+                                                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword1" class="form-label">Password Confirmation</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                                  </div>
+                                              </form>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer d-flex justify-content-center">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="">Register</button>
                                             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                         </div>
 
@@ -68,6 +136,7 @@
                     </ul>
                 </div>
             </div>
+            
         </nav>
     </header>
     <section class="mb-5" id="halamanAwal">
